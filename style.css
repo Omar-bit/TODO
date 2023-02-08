@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background: #20262e;
+  color: white;
+  font-size: 19px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+}
+.container {
+  background: #39434fd4;
+  width: 55%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin: auto;
+  margin-top: 15vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px -2px #888686;
+  padding: 2vh 3vw;
+  align-items: center;
+  justify-content: center;
+}
+.container h2 {
+  color: #2964b1;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+}
+.container input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 0 5px -0.5px #777;
+  background: wheat;
+  padding: 7px 14px;
+  font-size: 0.85em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container button {
+  border-radius: 5px;
+  background: #2964b1;
+  border: none;
+  color: white;
+  padding: 7px 17px;
+  font-size: 0.85em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container button:hover {
+  opacity: 0.8;
+}
+.container .todos {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+  padding-bottom: 5vh;
+}
+.container .todos .todo {
+  width: 100%;
+  padding: 3px 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px -1px #2964b1;
+}
+.container .todos .todo:hover {
+  box-shadow: 0 0 8px 0px #256cc8;
+}
+.container .todos .todo p {
+  font-size: 0.9em;
+}
+.container .todos .todo p:hover {
+  cursor: pointer;
+}
+.container .todos .todo span {
+  color: rgba(229, 62, 65, 0.947);
+  cursor: pointer;
+  font-size: 0.8em;
+}
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 16px;
+  }
+  .container .todos {
+    margin-top: 1vh;
+  }
+  .container {
+    width: 95%;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #20262e;
+  width: 100%;
+  padding: 13px;
+  text-align: center;
+}
+footer h3 {
+  color: white;
+}
+footer h3 a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 2px 2px #256cc8;
+}
